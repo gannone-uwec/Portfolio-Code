@@ -1,0 +1,85 @@
+body {background: #060A5E;
+    background: -webkit-linear-gradient(102deg, rgba(6, 10, 94, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(18, 18, 77, 1) 28%, rgba(33, 14, 89, 1) 80%, rgba(13, 0, 0, 1) 100%);
+    background: -moz-linear-gradient(102deg, rgba(6, 10, 94, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(18, 18, 77, 1) 28%, rgba(33, 14, 89, 1) 80%, rgba(13, 0, 0, 1) 100%);
+    background: linear-gradient(102deg, rgba(6, 10, 94, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(18, 18, 77, 1) 28%, rgba(33, 14, 89, 1) 80%, rgba(13, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060A5E", endColorstr="#0D0000", GradientType=0);}
+    
+h1 {color: white;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 50px;}
+
+h2 {color: lightgray;
+    font-size: 25px;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    text-align: center;}
+
+p {color: white;
+    font-size: medium;}
+
+.highlight {background-color: black;
+            padding-bottom: 15px;
+            margin: 0 auto;}
+
+    .highlight-container {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        position: relative;}
+    
+    .centered-text {
+        margin: 0;}
+    
+    .logo-container {
+        position: absolute;
+        top: 10%;
+        left: 20px;
+        transform: translateY(-50%);
+        z-index: 10;}
+    
+    #logo {
+        width: 340px;
+        height: auto;
+        vertical-align: middle;}
+
+    #eyes {display: block;
+            margin: 20px auto;}
+    
+            .book-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 30px;
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;/
+            }
+            
+            .arrow {
+                width: 100px;
+                height: auto;
+                cursor: pointer;}
+            
+            #eyes {
+                width: 350px;
+                height: auto;
+                margin: 0;
+                padding: 5%;
+            }
+            
+            .right-arrow {
+                transform: scaleX(-1);
+            }
+
+            .bio {font-size: 50px; 
+                padding-bottom: 5%;
+                padding-left: 10%;
+                padding-right: 10%;
+                    font-family: 'Roboto', 'Times New Roman', Times, serif;}
+
+            iframe {
+                display: block;
+                width: 100%;
+                margin: 20px auto;}

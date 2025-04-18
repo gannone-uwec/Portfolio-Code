@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliot N. Gannon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="highlight-container">
+        <h1 class="highlight centered-text">ELIOT N. GANNON</h1>
+        <h2 class="highlight centered-text">ABOUT | BOOKS | NEWS | CONTACT</h2>
+    </div>
+
+    <div class="logo-container">
+        <img id="logo" src="images/file.svg" alt="Logo" width="200px">
+    </div>
+
+    <div class="book-container">
+        <img class="arrow left-arrow" src="images/Arrow.png" alt="Left Arrow" width="100">
+        <img id="eyes" src="images/UNSLEEPING EYES.png" alt="Unsleeping Eyes" width="300px">
+        <img class="arrow right-arrow" src="images/Arrow.png" alt="Right Arrow" width="100" style="transform: scaleX(-1);">
+    </div>
+
+    <script>
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+        const bookCover = document.getElementById('eyes');
+
+        const originalCoverSrc = 'images/UNSLEEPING EYES.png';
+        const newCoverSrc = 'images/Necropolis Version 1.png'; // Replace with the actual path
+
+        let isOriginal = true;
+
+        leftArrow.addEventListener('click', () => {
+            if (isOriginal) {
+                bookCover.src = newCoverSrc;
+                isOriginal = false;
+            } else {
+                bookCover.src = originalCoverSrc;
+                isOriginal = true;
+            }
+        });
+
+        rightArrow.addEventListener('click', () => {
+            if (isOriginal) {
+                bookCover.src = newCoverSrc;
+                isOriginal = false;
+            } else {
+                bookCover.src = originalCoverSrc;
+                isOriginal = true;
+            }
+        });
+    </script>
+
+    <br>
+
+    <div class="highlight-container">
+        <h1 class="highlight centered-text">ABOUT</h1>
+        <h2 class="highlight centered-text">CURRICULUM VITAE | PUBLICATIONS | PERSONAL STATEMENT</h2></div>
+        <p class="bio"><b>Eliot N. Gannon is a graduating senior at the University of Wisconsin-Eau Claire with a Bachelor of Arts in Creative Writing and Psychology. He is awaiting decision letters from a list of seventeen Creative Writing MFA programs to which he has already been accepted to Chapman University in CA. He is hoping for an acceptance to one of the fully-funded alternative programs or a generous scholarship or financial aid offer from Chapman. He has a passion for writing stories of literary and genre fiction.</b></p>
+
+        <div class="highlight-container">
+            <h1 class="highlight centered-text">CURRICULUM VITAE</h1>
+            <h2 class="highlight centered-text">CURRICULUM VITAE | PUBLICATIONS | PERSONAL STATEMENT</h2></div>
+            <iframe src="documents/Master Curriculum Vitae (2025).docx.pdf" width="100%" height="900" allow="fullscreen"></iframe>
+
+</html>
+
