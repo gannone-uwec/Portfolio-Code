@@ -84,27 +84,27 @@ p {color: white;
             .text-centered {text-align: center;}
 
             .centered-text-block {
-                width: 60%; /* Adjust the width of the text block as needed */
-                margin: 0 auto; /* Centers the block horizontally */
-                border: 1px solid #eee; /* Just for visual demonstration */
-                padding: 15px; /* Optional: Add some padding around the text */
+                width: 60%; 
+                margin: 0 auto; 
+                border: 1px solid #eee; 
+                padding: 15px; 
                 font-family: 'Roboto', 'Times New Roman', Times, serif;}
 
                 .image-container {
                     text-align: center;
                   }
 
-                  .image-container + br + div { /* Selects the div after .image-container and a <br> */
+                  .image-container + br + div { 
                     text-align: center;
                   }
 
-                  .image-container + br + div { /* Selects the div after .image-container and a <br> */
+                  .image-container + br + div { 
                     text-align: center;
                   }
 
-                  body > br + img { /* Selects the img directly after a <br> that is a direct child of the body */
-                    display: block; /* Make it a block-level element */
-                    margin: 20px auto; /* Set left and right margins to auto */;
+                  body > br + img {
+                    display: block; 
+                    margin: 20px auto;
                   }
 
             #eliotmatt {margin: 20px;}
@@ -122,32 +122,30 @@ p {color: white;
 
         h3 {font-family: 'Roboto', 'Times New Roman', Times, serif;}
 
-        .highlight-container:last-of-type { /* Selects the very last element with the class 'highlight-container' */
-            text-align: center; /* Center the container's content */
-            /* You might want to remove the 'margin: 0 auto;' from the general .highlight-container
-               if you only want this specific one centered */
+        .highlight-container:last-of-type {
+            text-align: center; 
           }
 
           .highlight-container:last-of-type h1 {
-            text-align: left; /* Force the text within the centered container to be left-aligned */
-            margin: 0; /* Reset any default margins */
+            text-align: left; 
+            margin: 0; 
           }
 
           .contact-info-container {
-            width: 60%; /* Adjust the width as needed to control how wide the centered block is */
-            margin: 20px auto; /* Centers the container horizontally */
-            text-align: left; /* Left-align the text within the centered container */
-            padding: 20px; /* Optional: Add some padding */
-            border: 1px solid #eee; /* Optional: For visual reference */
-            color: white; /* Ensure text color is white */
-            font-family: 'Roboto', 'Times New Roman', Times, serif; /* Apply your font */
+            width: 60%; 
+            margin: 20px auto; 
+            text-align: left; 
+            padding: 20px; 
+            border: 1px solid #eee; 
+            color: white; 
+            font-family: 'Roboto', 'Times New Roman', Times, serif; 
           }
 
           .contact-info-container h2,
 .contact-info-container h3 {
-  text-align: left; /* Ensure the h2 and h3 elements are also left-aligned */
-  color: white; /* Ensure text color is white */
-  font-family: 'Roboto', 'Times New Roman', Times, serif; /* Apply your font */
+  text-align: left; 
+  color: white; 
+  font-family: 'Roboto', 'Times New Roman', Times, serif; 
 }
 
 link:hover {color: red;}
@@ -155,14 +153,14 @@ link:hover {color: red;}
 link {color: lightgray;}
 
 .highlight-container h2 a {
-    color: lightgray; /* Set the default link color to light gray */
-    text-decoration: none; /* Remove the default underline */
-    transition: color 0.3s ease; /* Add a smooth color transition */
+    color: lightgray; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
   }
   
-  /* Hover style for the links */
+
   .highlight-container h2 a:hover {
-    color: red; /* Change the link color to red on hover */
+    color: red; 
   }
 
     h4 {color: black;
@@ -172,3 +170,91 @@ link {color: lightgray;}
 
     h5 {display: flex;
         word-wrap: normal;}
+
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+      padding-top: 15px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    .logo-container {
+      position: static; 
+      text-align: center;
+      margin: 20px auto;
+      transform: none;
+    }
+  
+    #logo {
+      width: 200px;
+    }
+  
+    .book-container {
+      flex-direction: column; 
+      width: 90%;
+      margin-top: 20px;
+      gap: 15px;
+    }
+  
+    .book-container img {
+      width: 100%;
+    }
+  
+    .arrow {
+      width: 60px;
+    }
+  
+    .bio {
+      font-size: 1em;
+      padding: 15px;
+    }
+  
+    iframe {
+      width: 95%;
+      height: 600px;
+    }
+  
+    .centered-text-block {
+      width: 90%;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  
+    .image-container {
+      flex-direction: column; 
+    }
+  
+    .image-container img {
+      max-width: 90%;
+    }
+  
+    .map-container img {
+      max-width: 95%;
+    }
+  
+    .contact-info-container {
+      width: 90%;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+  
+    h5 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    h5 img {
+      margin-right: 0; 
+      margin-bottom: 10px; 
+      max-width: 100%; 
+      height: auto;
+    }
+  
+    h4 {
+      font-size: 36px;
+      padding-top: 15px;
+    }
+  }
