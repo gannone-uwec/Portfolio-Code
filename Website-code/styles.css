@@ -54,8 +54,7 @@ p {color: white;
                 margin-top: 30px;
                 width: 800px;
                 margin-left: auto;
-                margin-right: auto;/
-            }
+                margin-right: auto;}
             
             .arrow {
                 width: 100px;
@@ -66,12 +65,10 @@ p {color: white;
                 width: 350px;
                 height: auto;
                 margin: 0;
-                padding: 5%;
-            }
+                padding: 5%;}
             
             .right-arrow {
-                transform: scaleX(-1);
-            }
+                transform: scaleX(-1);}
 
             .bio {font-size: 50px; 
                 padding-bottom: 5%;
@@ -83,3 +80,95 @@ p {color: white;
                 display: block;
                 width: 100%;
                 margin: 20px auto;}
+
+            .text-centered {text-align: center;}
+
+            .centered-text-block {
+                width: 60%; /* Adjust the width of the text block as needed */
+                margin: 0 auto; /* Centers the block horizontally */
+                border: 1px solid #eee; /* Just for visual demonstration */
+                padding: 15px; /* Optional: Add some padding around the text */
+                font-family: 'Roboto', 'Times New Roman', Times, serif;}
+
+                .image-container {
+                    text-align: center;
+                  }
+
+                  .image-container + br + div { /* Selects the div after .image-container and a <br> */
+                    text-align: center;
+                  }
+
+                  .image-container + br + div { /* Selects the div after .image-container and a <br> */
+                    text-align: center;
+                  }
+
+                  body > br + img { /* Selects the img directly after a <br> that is a direct child of the body */
+                    display: block; /* Make it a block-level element */
+                    margin: 20px auto; /* Set left and right margins to auto */;
+                  }
+
+            #eliotmatt {margin: 20px;}
+
+            #me {margin: 20px;}
+
+            #emmet {margin: 20px;}
+
+            #claireandgwen {margin: 20px;}
+
+            #telumortis {margin: 20px;}
+            
+            .map-container {
+                text-align: center;}
+
+        h3 {font-family: 'Roboto', 'Times New Roman', Times, serif;}
+
+        .highlight-container:last-of-type { /* Selects the very last element with the class 'highlight-container' */
+            text-align: center; /* Center the container's content */
+            /* You might want to remove the 'margin: 0 auto;' from the general .highlight-container
+               if you only want this specific one centered */
+          }
+
+          .highlight-container:last-of-type h1 {
+            text-align: left; /* Force the text within the centered container to be left-aligned */
+            margin: 0; /* Reset any default margins */
+          }
+
+          .contact-info-container {
+            width: 60%; /* Adjust the width as needed to control how wide the centered block is */
+            margin: 20px auto; /* Centers the container horizontally */
+            text-align: left; /* Left-align the text within the centered container */
+            padding: 20px; /* Optional: Add some padding */
+            border: 1px solid #eee; /* Optional: For visual reference */
+            color: white; /* Ensure text color is white */
+            font-family: 'Roboto', 'Times New Roman', Times, serif; /* Apply your font */
+          }
+
+          .contact-info-container h2,
+.contact-info-container h3 {
+  text-align: left; /* Ensure the h2 and h3 elements are also left-aligned */
+  color: white; /* Ensure text color is white */
+  font-family: 'Roboto', 'Times New Roman', Times, serif; /* Apply your font */
+}
+
+link:hover {color: red;}
+
+link {color: lightgray;}
+
+.highlight-container h2 a {
+    color: lightgray; /* Set the default link color to light gray */
+    text-decoration: none; /* Remove the default underline */
+    transition: color 0.3s ease; /* Add a smooth color transition */
+  }
+  
+  /* Hover style for the links */
+  .highlight-container h2 a:hover {
+    color: red; /* Change the link color to red on hover */
+  }
+
+    h4 {color: black;
+        text-align: center;
+    padding-top: 25px;
+    font-size: 50px;}
+
+    h5 {display: flex;
+        word-wrap: normal;}
